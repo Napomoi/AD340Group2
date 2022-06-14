@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="attackersWinningPercent" type="id" />
+    <item name="txtValue" type="id" />
+    <item name="attackingArmies" type="id" />
+    <item name="btnAddAttacker" type="id" />
+    <item name="attackingArmiesCount" type="id" />
+    <item name="btnRemoveAttacker" type="id" />
+    <item name="defendingArmies" type="id" />
+    <item name="btnAddDefender" type="id" />
+    <item name="defendingArmiesCount" type="id" />
+    <item name="btnRemoveDefender" type="id" />
+    <item name="btnSubmit" type="id" />
+    <item name="btnReset" type="id" />
+    <item name="btnStopAttackAtThree" type="id" />
+    <item name="btnNewButton" type="id" />
+</resources>
