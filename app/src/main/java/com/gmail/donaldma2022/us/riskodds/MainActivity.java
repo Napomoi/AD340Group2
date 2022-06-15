@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         Button btnReset = (Button) findViewById(R.id.btnReset);
         Button btnStopAttackAtThree = (Button) findViewById(R.id.btnStopAttackAtThree);
         Button btnNewButton = (Button) findViewById(R.id.btnNewButton);
+//        Button btnSingleBattle = (Button) findViewById(R.id.btnSingleBattle);
 
 
         // Listen for all the button clicks
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         btnSubmit.setOnClickListener(this);
         btnReset.setOnClickListener(this);
         btnStopAttackAtThree.setOnClickListener(this);
-//        btnNewButton.setOnClickListener(this);
+//        btnSingleBattle.setOnClickListener(this);
     }
 
     @Override
@@ -123,10 +124,10 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
             case R.id.btnStopAttackAtThree:
                 openNewActivity();
                 break;
-
-            case R.id.btnNewButton:
-                openNewActivity4();
-                break;
+//
+//            case R.id.btnSingleBattle:
+//                openNewActivity4();
+//                break;
         }
     }
 
@@ -135,8 +136,11 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         startActivity(intent);
     }
 
-    private void openNewActivity4() {
-        Intent intent = new Intent(this, SingleBattle.class);
-        startActivity(intent);
+//    private void openNewActivity4() {
+//        Intent intent = new Intent(this, SingleBattle.class);
+//        startActivity(intent);
     }
-}
+
+
+
+

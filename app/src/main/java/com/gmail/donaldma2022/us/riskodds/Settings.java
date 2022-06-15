@@ -51,6 +51,7 @@ public class Settings extends AppCompatActivity implements 	View.OnClickListener
         Button btnReset = (Button) findViewById(R.id.btnReset);
         Button btnStopAttackAtThree = (Button) findViewById(R.id.btnStopAttackAtThree);
         Button btnNewButton = (Button) findViewById(R.id.btnNewButton);
+        Button btnBackToMain = (Button) findViewById(R.id.btnBackToMain);
 
 
         // Listen for all the button clicks
@@ -61,6 +62,7 @@ public class Settings extends AppCompatActivity implements 	View.OnClickListener
         btnSubmit.setOnClickListener(this);
         btnReset.setOnClickListener(this);
         btnStopAttackAtThree.setOnClickListener(this);
+        btnBackToMain.setOnClickListener(this);
 //        btnNewButton.setOnClickListener(this);
     }
 
@@ -116,7 +118,7 @@ public class Settings extends AppCompatActivity implements 	View.OnClickListener
                 txtDefenderArmyCount.setText("" + DefenderArmiesCount);
                 break;
 
-            case R.id.btnStopAttackAtThree:
+            case R.id.btnBackToMain:
                 openNewActivity();
                 break;
 

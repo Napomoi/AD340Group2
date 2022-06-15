@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Attackers Winning %"
+        android:text="@string/attackers_winning"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="0"
+        android:text="@string/_0"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Attacking Army Size"
+        android:text="@string/attacking_army_size"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textSize="40sp"
-        android:text="+"
+        android:text="@string/plusSign"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/attackingArmies" />
 
@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="2"
+        android:text="@string/_2"
         android:textSize="40sp"
         app:layout_constraintEnd_toStartOf="@+id/btnRemoveAttacker"
         app:layout_constraintStart_toEndOf="@+id/btnAddAttacker"
@@ -68,7 +68,7 @@
         android:layout_marginEnd="16dp"
         android:textSize="40sp"
         android:layout_marginBottom="84dp"
-        android:text="-"
+        android:text="@string/zeroSign"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/attackingArmies" />
     <TextView
@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Defending Army Size"
+        android:text="@string/defending_army_size"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="1"
+        android:text="@string/_1"
         android:textSize="40sp"
         app:layout_constraintEnd_toStartOf="@+id/btnRemoveDefender"
         app:layout_constraintStart_toEndOf="@+id/btnAddDefender"
@@ -118,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Calculate Odds"
+        android:text="@string/calculate_odds"
         android:textSize="28sp"
         app:layout_constraintTop_toBottomOf="@+id/btnRemoveDefender"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,33 +129,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="reset"
+        android:text="@string/reset"
         android:textSize="32sp"
         app:layout_constraintTop_toBottomOf="@+id/btnSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnStopAttackAtThree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Stop Attack at 3 Armies Screen"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/btnReset"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+<!--    <Button-->
+<!--        android:id="@+id/btnStopAttackAtThree"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:text="Stop Attack at 3 Armies Screen"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnReset"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
 
-    <!--    <Button-->
-    <!--        android:id="@+id/newButton"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="12dp"-->
-    <!--        android:text="Stop Attack at 3 Armies Screen"-->
-    <!--        android:textSize="24sp"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/btnStopAttackAtThree"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"/>-->
+        <Button
+            android:id="@+id/btnBackToMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/back_to_main"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/btnReset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

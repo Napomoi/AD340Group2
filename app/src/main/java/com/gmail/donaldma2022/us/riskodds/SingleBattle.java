@@ -28,7 +28,7 @@ public class SingleBattle extends AppCompatActivity implements 	View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.singlebattle);
 
         // Get a reference to all the buttons in our UI
         // Match them up to all our Button objects we declared earlier
@@ -51,6 +51,7 @@ public class SingleBattle extends AppCompatActivity implements 	View.OnClickList
         Button btnReset = (Button) findViewById(R.id.btnReset);
         Button btnStopAttackAtThree = (Button) findViewById(R.id.btnStopAttackAtThree);
         Button btnNewButton = (Button) findViewById(R.id.btnNewButton);
+        Button btnBackToMain = (Button) findViewById(R.id.btnBackToMain);
 
 
         // Listen for all the button clicks
@@ -61,15 +62,15 @@ public class SingleBattle extends AppCompatActivity implements 	View.OnClickList
         btnSubmit.setOnClickListener(this);
         btnReset.setOnClickListener(this);
         btnStopAttackAtThree.setOnClickListener(this);
-//        btnNewButton.setOnClickListener(this);
+        btnBackToMain.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnAddAttacker:
-                if (AttackingArmiesCount >= 20) {
-                    AttackingArmiesCount = 20;
+                if (AttackingArmiesCount >= 3) {
+                    AttackingArmiesCount = 3;
                 } else {
                     AttackingArmiesCount++;
                 }
@@ -86,8 +87,8 @@ public class SingleBattle extends AppCompatActivity implements 	View.OnClickList
                 break;
 
             case R.id.btnAddDefender:
-                if (DefenderArmiesCount >= 20) {
-                    DefenderArmiesCount = 20;
+                if (DefenderArmiesCount >= 2) {
+                    DefenderArmiesCount = 2;
                 } else {
                     DefenderArmiesCount++;
                 }
@@ -116,23 +117,14 @@ public class SingleBattle extends AppCompatActivity implements 	View.OnClickList
                 txtDefenderArmyCount.setText("" + DefenderArmiesCount);
                 break;
 
-            case R.id.btnStopAttackAtThree:
+            case R.id.btnBackToMain:
                 openNewActivity();
-                break;
-
-            case R.id.btnNewButton:
-                openNewActivity4();
                 break;
         }
     }
 
     private void openNewActivity() {
         Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    private void openNewActivity4() {
-        Intent intent = new Intent(this, SingleBattle.class);
         startActivity(intent);
     }
 }
